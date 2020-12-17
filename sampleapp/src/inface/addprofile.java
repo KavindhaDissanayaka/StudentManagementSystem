@@ -201,6 +201,8 @@ public class addprofile extends javax.swing.JFrame {
         search = new javax.swing.JTextField();
         clear2 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table1 = new javax.swing.JTable();
         jLabel13 = new javax.swing.JLabel();
@@ -228,7 +230,7 @@ public class addprofile extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 438, 150, 30));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 478, 150, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("AR No:");
@@ -240,47 +242,47 @@ public class addprofile extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Email");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 185, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setText("Password");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 225, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel6.setText("Mobile No:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 265, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setText("Address");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 305, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Birth");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 345, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setText("Gender");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 385, -1, -1));
-        jPanel1.add(ar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 95, 250, 30));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 414, -1, -1));
+        jPanel1.add(ar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 98, 250, 30));
 
         name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nameActionPerformed(evt);
             }
         });
-        jPanel1.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 135, 250, 30));
-        jPanel1.add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 175, 250, 30));
-        jPanel1.add(mura, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 215, 250, 30));
-        jPanel1.add(duka, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 255, 250, 30));
+        jPanel1.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 134, 250, 30));
+        jPanel1.add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 207, 250, 30));
+        jPanel1.add(mura, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 247, 250, 30));
+        jPanel1.add(duka, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 287, 250, 30));
 
         lipinaya.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lipinayaActionPerformed(evt);
             }
         });
-        jPanel1.add(lipinaya, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 295, 250, 30));
-        jPanel1.add(bday, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 335, 250, 30));
-        jPanel1.add(lin, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 375, 250, 30));
+        jPanel1.add(lipinaya, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 327, 250, 30));
+        jPanel1.add(bday, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 367, 250, 30));
+        jPanel1.add(lin, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 407, 250, 30));
 
         insertbtn.setBackground(new java.awt.Color(255, 255, 153));
         insertbtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -291,7 +293,7 @@ public class addprofile extends javax.swing.JFrame {
                 insertbtnActionPerformed(evt);
             }
         });
-        jPanel1.add(insertbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 495, 100, 30));
+        jPanel1.add(insertbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 478, 155, 30));
 
         updatebtn.setBackground(new java.awt.Color(153, 255, 102));
         updatebtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -303,7 +305,7 @@ public class addprofile extends javax.swing.JFrame {
                 updatebtnActionPerformed(evt);
             }
         });
-        jPanel1.add(updatebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 438, 150, 30));
+        jPanel1.add(updatebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(154, 519, 100, 30));
 
         clear.setBackground(new java.awt.Color(204, 204, 204));
         clear.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -314,7 +316,7 @@ public class addprofile extends javax.swing.JFrame {
                 clearActionPerformed(evt);
             }
         });
-        jPanel1.add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 495, 100, 30));
+        jPanel1.add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 519, 100, 30));
 
         deletebtn.setBackground(new java.awt.Color(255, 102, 102));
         deletebtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -325,18 +327,18 @@ public class addprofile extends javax.swing.JFrame {
                 deletebtnActionPerformed(evt);
             }
         });
-        jPanel1.add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 495, 100, 30));
+        jPanel1.add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 519, 100, 30));
 
         jLabel10.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         jLabel10.setText("STUDENT DETAILS");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 11, 160, 30));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 160, 30));
 
         id.setForeground(new java.awt.Color(255, 255, 255));
         id.setText(" ");
-        jPanel1.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 444, 20, 20));
+        jPanel1.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 449, 20, 20));
 
         search.setToolTipText("AR number or Name");
-        jPanel1.add(search, new org.netbeans.lib.awtextra.AbsoluteConstraints(282, 13, 129, 30));
+        jPanel1.add(search, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 13, 90, 30));
 
         clear2.setBackground(new java.awt.Color(204, 204, 204));
         clear2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -348,7 +350,20 @@ public class addprofile extends javax.swing.JFrame {
         });
         jPanel1.add(clear2, new org.netbeans.lib.awtextra.AbsoluteConstraints(417, 12, 89, 30));
 
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, -1, -1));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 171, 250, 30));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("Course ");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 80, 30));
+
+        jButton4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton4.setText("Back");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 70, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 560));
 
@@ -566,6 +581,13 @@ public class addprofile extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jLabel15MouseClicked
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        admin_home home = new admin_home();
+        home.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -613,9 +635,11 @@ public class addprofile extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;

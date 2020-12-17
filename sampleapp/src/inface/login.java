@@ -73,10 +73,10 @@ public class login extends javax.swing.JFrame {
         Username.setName(""); // NOI18N
         jPanel1.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 122, 180, 30));
 
-        logbtn.setBackground(new java.awt.Color(0, 153, 255));
+        logbtn.setBackground(new java.awt.Color(255, 255, 255));
         logbtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        logbtn.setForeground(new java.awt.Color(255, 255, 255));
         logbtn.setText("Login");
+        logbtn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         logbtn.setBorderPainted(false);
         logbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
