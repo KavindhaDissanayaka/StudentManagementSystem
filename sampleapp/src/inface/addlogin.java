@@ -70,10 +70,10 @@ public class addlogin extends javax.swing.JFrame {
         });
         jPanel1.add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 141, 190, 30));
 
-        jButton1.setBackground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionBackground"));
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Login");
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton1.setBorderPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +122,7 @@ public class addlogin extends javax.swing.JFrame {
             ResultSet rs = psttt.executeQuery();
             rs.last();
             if(rs.getRow() != 0){
-                addprofile ap = new addprofile();
+                admin_home ap = new admin_home();
                 ap.setVisible(true);
                 this.dispose();
             }
