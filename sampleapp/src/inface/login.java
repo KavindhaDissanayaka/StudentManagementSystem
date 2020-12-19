@@ -53,6 +53,7 @@ public class login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("login. page");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -60,21 +61,22 @@ public class login extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel1.setText("STUDENT LOGIN");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 42, 190, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 190, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("User Name");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 101, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("Password");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 163, -1, 20));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, -1, 20));
 
         Username.setName(""); // NOI18N
-        jPanel1.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 122, 180, 30));
+        jPanel1.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 180, 30));
 
-        logbtn.setBackground(new java.awt.Color(255, 255, 255));
+        logbtn.setBackground(new java.awt.Color(51, 102, 255));
         logbtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        logbtn.setForeground(new java.awt.Color(255, 255, 255));
         logbtn.setText("Login");
         logbtn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         logbtn.setBorderPainted(false);
@@ -83,20 +85,22 @@ public class login extends javax.swing.JFrame {
                 logbtnActionPerformed(evt);
             }
         });
-        jPanel1.add(logbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 234, 180, 30));
+        jPanel1.add(logbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 180, 30));
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton1.setText("Home");
+        jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 80, 30));
-        jPanel1.add(pword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 189, 180, 30));
+        jPanel1.add(pword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 180, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 355));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 420));
 
-        setSize(new java.awt.Dimension(416, 394));
+        setSize(new java.awt.Dimension(419, 460));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -109,8 +113,8 @@ public class login extends javax.swing.JFrame {
             ResultSet rs = psttt.executeQuery();
             rs.last();
             if(rs.getRow() != 0){
-            stprofile sprof=new stprofile();
-            sprof.setVisible(true);
+            select details=new select();
+            details.setVisible(true);
             this.dispose();
            }
            else{

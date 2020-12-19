@@ -41,17 +41,19 @@ public class course extends javax.swing.JFrame {
     }
     
     public void clear(){
-        jTextField2.setText("");
-         jTextField1.setText("");
+//        jTextField2.setText("");
+        jTextField1.setText("");
+        jTextField3.setText("");
+        PrevId.setText("");
     }
     
     public void insert(){
         try {
                     
-            int id = Integer.parseInt(jTextField2.getText());
+//            int id = Integer.parseInt(jTextField2.getText());
             String name = jTextField1.getText();
        
-            String sql ="INSERT INTO course (id,course_name)VALUES('"+id+"','"+name+"')";
+            String sql ="INSERT INTO course (course_name)VALUES('"+name+"')";
             pst = conn.prepareStatement(sql);
             pst.execute();
             JOptionPane.showMessageDialog(null, "Succsess");
@@ -66,7 +68,8 @@ public class course extends javax.swing.JFrame {
     public void update(){
         
         try {
-            String Id = jTextField2.getText();
+//            String Id = jTextField2.getText();
+            String Id = PrevId.getText();
             if(!Id.equals("")){
                 String name =  jTextField1.getText();
 
@@ -77,6 +80,18 @@ public class course extends javax.swing.JFrame {
                 tableload();
                 clear();
             }            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }
+     public void search(){
+        String srch=jTextField3.getText(); 
+    
+        try {
+            String sql="SELECT * FROM course WHERE id LIKE '%"+srch+"%' or course_name LIKE '%"+srch+"%'";
+            pst=conn.prepareStatement(sql);
+            rs=pst.executeQuery();
+            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
@@ -94,10 +109,8 @@ public class course extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -105,8 +118,12 @@ public class course extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jButton6 = new javax.swing.JButton();
+        jTextField3 = new javax.swing.JTextField();
+        PrevId = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -114,23 +131,18 @@ public class course extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         jLabel1.setText("COURSE DETAILS");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 51, 151, 35));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 151, 35));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel2.setText("Course ID");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 136, 93, 30));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Course Name");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 185, 93, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 93, 30));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 186, 228, 30));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 137, 228, 30));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 228, 30));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 153));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -141,7 +153,7 @@ public class course extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 135, 33));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 135, 33));
 
         jButton2.setBackground(new java.awt.Color(153, 255, 102));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -152,7 +164,7 @@ public class course extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 135, 31));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, 135, 31));
 
         jButton3.setBackground(new java.awt.Color(153, 204, 255));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -163,7 +175,7 @@ public class course extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 279, 124, 31));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 124, 31));
 
         jButton4.setBackground(new java.awt.Color(204, 204, 204));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -174,7 +186,7 @@ public class course extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 328, 124, 33));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, 124, 33));
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton5.setText("Back");
@@ -203,7 +215,21 @@ public class course extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 0, 250, 411));
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 0, 300, 411));
+
+        jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton6.setText("Search");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 80, 30));
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 60, 30));
+
+        PrevId.setBackground(new java.awt.Color(255, 255, 255));
+        PrevId.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(PrevId, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -242,7 +268,8 @@ public class course extends javax.swing.JFrame {
         String Id= jTable1.getValueAt(r, 0) == null ? "" : jTable1.getValueAt(r, 0).toString();
         String name=  jTable1.getValueAt(r, 1) == null ? "" : jTable1.getValueAt(r, 1).toString();
     
-         jTextField2.setText(Id);
+//         jTextField2.setText(Id);
+         PrevId.setText(Id);
          jTextField1.setText(name);
     }//GEN-LAST:event_jTable1MouseClicked
 
@@ -250,6 +277,11 @@ public class course extends javax.swing.JFrame {
         // TODO add your handling code here:
         tableload();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        search();
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -287,13 +319,14 @@ public class course extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel PrevId;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -301,6 +334,6 @@ public class course extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
