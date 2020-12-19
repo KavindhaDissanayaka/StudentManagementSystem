@@ -214,6 +214,7 @@ public class addprofile extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -395,32 +396,38 @@ public class addprofile extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         jLabel13.setText("Notice  :");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, -1, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 590, -1, -1));
 
         note.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 noteActionPerformed(evt);
             }
         });
-        getContentPane().add(note, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 570, 320, 40));
+        getContentPane().add(note, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 580, 320, 40));
 
+        jButton2.setBackground(new java.awt.Color(255, 255, 153));
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton2.setText("Publish");
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 620, 110, 30));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 630, 110, 30));
 
+        jButton3.setBackground(new java.awt.Color(204, 255, 153));
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton3.setText("Notice Area");
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 620, 110, 30));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 630, 110, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

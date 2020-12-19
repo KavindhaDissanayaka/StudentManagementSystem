@@ -30,6 +30,7 @@ public class WelcomePage extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jProgressBar1 = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -40,9 +41,9 @@ public class WelcomePage extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inface/asset/Capture5555.PNG"))); // NOI18N
         jLabel3.setText("jLabel3");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 80, 286, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 286, -1));
 
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 26)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 102, 255));
         jLabel1.setText("STUDENT MANAGEMENT SYSTEM");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -51,13 +52,14 @@ public class WelcomePage extends javax.swing.JFrame {
                 jLabel1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 447, 53));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, 510, 53));
 
-        jLabel2.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Verdana", 1, 25)); // NOI18N
         jLabel2.setText("WELCOME");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 29, 181, 45));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 181, 45));
+        jPanel1.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 440, 200, 20));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 430));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 530));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -110,5 +112,6 @@ public class WelcomePage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JProgressBar jProgressBar1;
     // End of variables declaration//GEN-END:variables
 }
