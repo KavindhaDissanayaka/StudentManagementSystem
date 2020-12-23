@@ -57,7 +57,7 @@ public class addlogin extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel2.setText("User Name");
+        jLabel2.setText("E mail");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 120, -1, 10));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
