@@ -93,7 +93,7 @@ public void tableload(){
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        setSize(new java.awt.Dimension(642, 461));
+        setSize(new java.awt.Dimension(643, 461));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

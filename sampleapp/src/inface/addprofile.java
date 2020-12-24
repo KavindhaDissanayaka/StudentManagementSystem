@@ -205,10 +205,6 @@ public class addprofile extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table1 = new javax.swing.JTable();
-        jLabel13 = new javax.swing.JLabel();
-        note = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
 
         jLabel1.setText("jLabel1");
 
@@ -399,41 +395,6 @@ public class addprofile extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 540, 560));
 
-        jLabel13.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
-        jLabel13.setText("Notice  :");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 590, -1, -1));
-
-        note.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                noteActionPerformed(evt);
-            }
-        });
-        getContentPane().add(note, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 580, 320, 40));
-
-        jButton2.setBackground(new java.awt.Color(255, 255, 153));
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton2.setText("Publish");
-        jButton2.setBorder(null);
-        jButton2.setBorderPainted(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 630, 110, 30));
-
-        jButton3.setBackground(new java.awt.Color(204, 255, 153));
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton3.setText("Notice Area");
-        jButton3.setBorder(null);
-        jButton3.setBorderPainted(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 630, 110, 30));
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -526,36 +487,6 @@ public class addprofile extends javax.swing.JFrame {
         tableload();
     }//GEN-LAST:event_clearActionPerformed
 
-    private void noteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_noteActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        String notic=note.getText();
-        int n=JOptionPane.showConfirmDialog(null, "Are you sure");
-        
-        if(n==0){
-        
-        try {
-            String sql="INSERT INTO spnote(Notice)VALUES('"+notic+"')";
-            pst=conn.prepareStatement(sql);
-            pst.execute();
-            JOptionPane.showMessageDialog(null,"published");
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null,e);
-            
-        }
-        }
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-         stprofile sp=new stprofile();
-         sp.setVisible(true);
-         
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void lipinayaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lipinayaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_lipinayaActionPerformed
@@ -626,14 +557,11 @@ public class addprofile extends javax.swing.JFrame {
     private javax.swing.JLabel id;
     private javax.swing.JButton insertbtn;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -649,7 +577,6 @@ public class addprofile extends javax.swing.JFrame {
     private javax.swing.JTextField mail;
     private javax.swing.JTextField mura;
     private javax.swing.JTextField name;
-    private javax.swing.JTextField note;
     private javax.swing.JTextField search;
     private javax.swing.JTable table1;
     private javax.swing.JButton updatebtn;
