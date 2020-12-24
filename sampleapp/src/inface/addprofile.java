@@ -337,6 +337,11 @@ public class addprofile extends javax.swing.JFrame {
         jPanel1.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 449, 20, 20));
 
         search.setToolTipText("AR number or Name");
+        search.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                searchKeyReleased(evt);
+            }
+        });
         jPanel1.add(search, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 13, 90, 30));
 
         clear2.setBackground(new java.awt.Color(204, 204, 204));
@@ -570,6 +575,11 @@ public class addprofile extends javax.swing.JFrame {
         home.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void searchKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchKeyReleased
+        // TODO add your handling code here:
+        search();
+    }//GEN-LAST:event_searchKeyReleased
 
     /**
      * @param args the command line arguments
