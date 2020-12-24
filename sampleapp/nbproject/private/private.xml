@@ -3,12 +3,34 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/select.java</file>
             <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/extamdetailsview.java</file>
             <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/addlogin.java</file>
             <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/WelcomePage.java</file>
             <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/adminPage.java</file>
             <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/stprofile.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/select.java</file>
+            <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/extamdetailsview.java</file>
+            <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/examadmin.java</file>
+            <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/addprofile.java</file>
+            <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/stprofile.java</file>
+            <file>file:/C:/Users/user/Documents/GitHub/StudentManagementSystem/sampleapp/src/inface/course.java</file>
+=======
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/code/DBconnect.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/select.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/addprofile.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/login.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/admin_home.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/WelcomePage.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/examadmin.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/addlogin.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/extamdetailsview.java</file>
+            <file>file:/C:/Users/Kavinda/Desktop/yep/StudentManagementSystem/sampleapp/src/inface/stprofile.java</file>
+>>>>>>> f5bfacd4c036bc5d353280b4704c7bcf07b25290
+>>>>>>> 6c67c9ae8a7bf6df992368ece79e7b656920e7b5
         </group>
     </open-files>
 </project-private>
