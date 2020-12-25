@@ -35,6 +35,7 @@ public class homePage extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 102));
@@ -61,7 +62,7 @@ public class homePage extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/src/inface/asset/user-icon-trendy-flat-style-260nw-1467725033.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inface/asset/user-icon-trendy-flat-style-260nw-1467725033.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
