@@ -225,7 +225,7 @@ public class addprofile extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 520, 150, 30));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 120, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 0));
@@ -296,7 +296,7 @@ public class addprofile extends javax.swing.JFrame {
                 insertbtnActionPerformed(evt);
             }
         });
-        jPanel1.add(insertbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 130, 30));
+        jPanel1.add(insertbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 170, 30));
 
         updatebtn.setBackground(new java.awt.Color(153, 255, 102));
         updatebtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -308,7 +308,7 @@ public class addprofile extends javax.swing.JFrame {
                 updatebtnActionPerformed(evt);
             }
         });
-        jPanel1.add(updatebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, 120, 30));
+        jPanel1.add(updatebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 480, 180, 30));
 
         clear.setBackground(new java.awt.Color(204, 204, 204));
         clear.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -319,7 +319,7 @@ public class addprofile extends javax.swing.JFrame {
                 clearActionPerformed(evt);
             }
         });
-        jPanel1.add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 520, 130, 30));
+        jPanel1.add(clear, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 520, 110, 30));
 
         deletebtn.setBackground(new java.awt.Color(255, 102, 102));
         deletebtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -330,12 +330,12 @@ public class addprofile extends javax.swing.JFrame {
                 deletebtnActionPerformed(evt);
             }
         });
-        jPanel1.add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 470, 120, 30));
+        jPanel1.add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, 110, 30));
 
         jLabel10.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 0));
         jLabel10.setText("STUDENT DETAILS");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 220, 30));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 50, 220, 30));
 
         id.setForeground(new java.awt.Color(255, 255, 255));
         id.setText(" ");
