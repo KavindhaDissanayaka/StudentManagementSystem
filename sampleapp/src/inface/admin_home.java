@@ -56,7 +56,7 @@ public class admin_home extends javax.swing.JFrame {
                 jLabel1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 191, 44));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 191, 44));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 1, 15)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 0));
@@ -67,7 +67,7 @@ public class admin_home extends javax.swing.JFrame {
                 jLabel2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 120, 38));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 120, 38));
 
         jLabel3.setFont(new java.awt.Font("Verdana", 1, 15)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 0));
@@ -78,7 +78,7 @@ public class admin_home extends javax.swing.JFrame {
                 jLabel3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, 77, 38));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 77, 38));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 1, 15)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 0));
@@ -100,7 +100,7 @@ public class admin_home extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 60, 34));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 60, 34));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/inface/asset/227-2271076_student-management-system-symbol-hd-png-download.png"))); // NOI18N
         jLabel6.setText("jLabel6");
