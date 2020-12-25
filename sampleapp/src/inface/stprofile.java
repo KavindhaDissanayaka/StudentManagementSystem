@@ -91,6 +91,7 @@ public class stprofile extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 84, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -70, 760, 470));

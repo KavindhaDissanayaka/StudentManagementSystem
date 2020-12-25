@@ -181,8 +181,8 @@ public class admin_home extends javax.swing.JFrame {
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
-        addprofile student = new addprofile();
-        student.setVisible(true);
+        notice note = new notice();
+        note.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel4MouseClicked
 
