@@ -56,27 +56,29 @@ public class login extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
         jLabel1.setText("STUDENT LOGIN");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 190, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 190, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
         jLabel2.setText("E mail");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 0));
         jLabel3.setText("Password");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, -1, 20));
 
         Username.setName(""); // NOI18N
         jPanel1.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 180, 30));
 
-        logbtn.setBackground(new java.awt.Color(51, 102, 255));
+        logbtn.setBackground(new java.awt.Color(255, 255, 255));
         logbtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        logbtn.setForeground(new java.awt.Color(255, 255, 255));
         logbtn.setText("Login");
         logbtn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         logbtn.setBorderPainted(false);
@@ -98,7 +100,7 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 80, 30));
         jPanel1.add(pword, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 180, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 420));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 420));
 
         setSize(new java.awt.Dimension(419, 460));
         setLocationRelativeTo(null);
